@@ -364,7 +364,7 @@ function teclaOprimida(Event){
       break
     case "ArrowLeft":
       moverIzquierda()
-      break
+      break 
     case "ArrowRight":
       moverDerecha()
       break
@@ -405,7 +405,7 @@ function revisarColision(enemigo){
     abajoMascota < arribaEnemigo ||
     arribaMascota > abajoEnemigo ||
     derechaMascota < izquierdaEnemigo ||
-    izquieraMascota > derechaEnemigo
+    izquierdaMascota > derechaEnemigo
   ){
     return
   }
@@ -413,6 +413,3 @@ function revisarColision(enemigo){
 }
 
 window.addEventListener("load", iniciarJuego)
-
-/*  lienzo.background = new Image()
-  lienzo.background.src = "mapa.png"*/
