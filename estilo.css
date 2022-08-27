@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    font-family: 'Permanent Marker', cursive;
+    background-color: #006E7F;
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo_inicial{
+    color:#EE5007;
+    font-size: 50px;
+    margin: 5px;
+}
+.subtitulo{
+    color:#F8CB2E;
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+.tarjetas-campeones{
+    width: 200px;
+    height: 150px;
+    box-sizing: border-box;
+    background: #B22727;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas-campeones img{
+    width: 100px;
+}
+
+#fotos{
+    width: 100px;
+}
+
+#b-campeon{
+    color: #EE5007;
+    background-color: #F8CB2E;
+    box-sizing: border-box;
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    border: #F8CB2E;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+}
+
+#b-campeon:active{
+    background-color:#EE5007;
+    color:#F8CB2E;
+}
+
+.tarjetas input{
+    display: none;
+}
+
+input:checked + label{
+    background-color:#a00e0e;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.b-ataque{
+    background-color: #B22727;
+    border-radius: 20px;
+    border: #B22727;
+    width: 100px;
+    height: 30px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+
+.b-ataque:active{
+    background-color: #a00e0e;
+}
+
+#mensajes{
+    width: 280px;
+    background-color: #EE5007;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#b-restart{
+    border: none;
+    color:#F8CB2E;
+    background-color: #006E7F;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#b-restart:active{
+    background-color:#004853;
+}
+
+.ataques{
+    display: grid;
+    grid-template-columns: 130px 130px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #F8CB2E;
+    border-color: #F8CB2E;
+    margin-top: 10px;
+}
+
+.vidas{
+    font-size: 20px;
+}
+
+.campeon{
+    font-size: 25px;
+}
+
+.ataques-2{
+    font-size: 15px;
+}
+
+#titulo_mapa{
+    font-size: 35px;
+    color:#EE5007;
+    margin: 5px;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mapa{
+    border: 2px solid white;
+}
+
+@media(max-width: 440px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    #b-campeon{
+        width: 300px;
+    }
+    .b-ataque{
+        justify-content: center;
+        display: flex;
+    }
+}
