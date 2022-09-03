@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <section id="seleccionar-mascota">
+      <h1 id="titulo_inicial">Mokepon!</h1>
+      <h2 class="subtitulo">Elige a tu Campeon:</h2>
+
+      <div id="contenedor-tarjetas" class="tarjetas">
+        
+      </div>
+
+      <button id="b-campeon">Seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+      <h1 id="titulo_mapa">Recorre el mapa con tu Campeon</h1>
+      <canvas id="mapa"></canvas>
+      <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+      <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+      <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+      <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+    </section>
+
+    <section id="seleccionar-ataque">
+      <h1 id="titulo_inicial">Mokepon</h1>
+
+      <h2 class="subtitulo">Elige tu ataque:</h2>
+
+      <div id="contenedor-ataques">
+        
+      </div>
+
+      <div id="mensajes">
+        <p id="resultado">Mucha Suerte!</p>
+
+          <section id="reiniciar">
+            <button id="b-restart">Reiniciar</button>
+          </section>
+      </div> 
+
+      <div class="ataques">
+        <div>
+          <p id = "vidas-jugador" class="vidas">0</p>
+          <p id="campeon-jugador" class="campeon"></p>
+          <div id="ataques-del-jugador" class="ataques-2"></div>
+        </div>
+        <div>
+          <p id = "vidas-enemigo" class="vidas">0</p>
+          <p id="campeon-enemigo" class="campeon"></p>
+          <div id="ataques-del-enemigo" class="ataques-2"></div>
+        </div>       
+      </div>
+    </section>
+    <script src="mokito.js" charset="utf-8"></script>
+  </body>
+</html
