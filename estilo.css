@@ -154,6 +154,19 @@ input:checked + label{
     border: 2px solid white;
 }
 
+#ver-mapa button{
+    color: #EE5007;
+    background-color: #F8CB2E;
+    box-sizing: border-box;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 5px 0px;
+    border: #F8CB2E;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+
 @media(max-width: 440px){
     .tarjetas{
         flex-direction: column;
@@ -164,5 +177,13 @@ input:checked + label{
     .b-ataque{
         justify-content: center;
         display: flex;
+    }
+}
+
+@media(max-width: 440px){
+    #ver-mapa div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
